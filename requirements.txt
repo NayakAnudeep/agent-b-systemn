@@ -1,0 +1,25 @@
+# Core dependencies
+playwright
+browsergym
+anthropic
+openai
+
+# Computer vision and image processing
+Pillow
+opencv-python
+scikit-image
+
+# Utilities
+pyyaml
+pydantic
+python-dotenv
+aiohttp
+beautifulsoup4
+lxml
+
+# Testing
+pytest
+pytest-asyncio
+
+# Logging
+loguru

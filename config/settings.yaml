@@ -1,0 +1,43 @@
+llm:
+  providers:
+    claude:
+      model: "claude-sonnet-4-20250514"
+      max_tokens: 4096
+      temperature: 0.7
+    openai:
+      model: "gpt-4o"
+      max_tokens: 4096
+      temperature: 0.7
+
+browser:
+  headless: false
+  viewport:
+    width: 1280
+    height: 720
+  timeout: 30000
+  user_agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+
+detection:
+  visual_similarity_threshold: 0.95  # SSIM threshold
+  dom_stability_checks: 3
+  wait_between_checks: 300  # milliseconds
+  network_idle_timeout: 1000  # milliseconds
+
+screenshot:
+  format: "png"
+  quality: 90
+  som_marker:
+    background_color: "#FF0000"
+    text_color: "#FFFFFF"
+    font_size: 12
+    padding: "2px 6px"
+    z_index: 10000
+
+agent:
+  max_steps: 50
+  task_timeout: 300  # seconds
+  enable_self_reflection: true
+
+logging:
+  level: "INFO"
+  format: "<green>{time:YYYY-MM-DD HH:mm:ss}</green> | <level>{level: <8}</level> | <cyan>{name}</cyan>:<cyan>{function}</cyan> - <level>{message}</level>"
